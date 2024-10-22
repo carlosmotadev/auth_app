@@ -40,14 +40,14 @@ Este é um aplicativo de autenticação simples criado com Rails 8, Tailwind CSS
 3. Configure o banco de dados:
 
    ```bash
-   bin/rails db:create db:migrate
+   rails db:create db:migrate
    ```
 
 
 4. Inicie o servidor:
 
    ```bash
-   bin/rails server
+   bin/dev
    ```
 
 
