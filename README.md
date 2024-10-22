@@ -1,24 +1,38 @@
-# README
+# AuthApp - Aplicação de Autenticação com Rails 8
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Este é um projeto básico de autenticação de usuários utilizando Ruby on Rails 8 com suporte para TailwindCSS, Turbo, e Stimulus. Ele permite que os usuários se cadastrem, façam login e logout. A segurança é implementada com `bcrypt` para o armazenamento seguro de senhas.
 
-Things you may want to cover:
+## Funcionalidades
 
-* Ruby version
+- Registro de usuários
+- Login de usuários
+- Logout de usuários
+- Flash messages para feedback do usuário
+- Validações de email e senha
 
-* System dependencies
+## Tecnologias
 
-* Configuration
+- Ruby on Rails 8.0.0
+- TailwindCSS (via `tailwindcss-rails`)
+- Turbo e Stimulus para atualizações sem recarregar a página
+- BCrypt para hashing de senhas
 
-* Database creation
+## Pré-requisitos
 
-* Database initialization
+Certifique-se de que você tem as seguintes dependências instaladas:
 
-* How to run the test suite
+- Ruby (>= 3.2.0)
+- Rails (>= 8.0.0)
+- Node.js (para JavaScript)
+- Yarn (gerenciador de pacotes)
+- PostgreSQL, SQLite ou outro banco de dados configurado
 
-* Services (job queues, cache servers, search engines, etc.)
+## Instruções para Rodar o Projeto
 
-* Deployment instructions
+### 1. Clonar o Repositório
 
-* ...
+Clone o projeto para a sua máquina local.
+
+```bash
+git clone https://github.com/carlosmotadev/auth_app.git
+cd auth_app
