@@ -1,4 +1,4 @@
-echo "# AuthApp
+# AuthApp com Rails 8
 
 ## Descrição
 
