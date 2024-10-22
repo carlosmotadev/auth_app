@@ -27,7 +27,7 @@ Este é um aplicativo de autenticação simples criado com Rails 8, Tailwind CSS
 1. Clone o repositório:
 
    \`\`\`bash
-   git clone https://github.com/seuusuario/auth_app.git
+   https://github.com/carlosmotadev/auth_app.git
    cd auth_app
    \`\`\`
 
