@@ -25,29 +25,31 @@ Este é um aplicativo de autenticação simples criado com Rails 8, Tailwind CSS
 ### Passos para rodar o projeto localmente
 
 1. Clone o repositório:
-
-   \`\`\`bash
-   https://github.com/carlosmotadev/auth_app.git
+   ```bash
+   git clone https://github.com/carlosmotadev/auth_app.git
    cd auth_app
-   \`\`\`
+   ```
 
 2. Instale as dependências:
 
-   \`\`\`bash
+   ```bash
    bundle install
-   \`\`\`
+   ```
+
 
 3. Configure o banco de dados:
 
-   \`\`\`bash
+   ```bash
    bin/rails db:create db:migrate
-   \`\`\`
+   ```
+
 
 4. Inicie o servidor:
 
-   \`\`\`bash
+   ```bash
    bin/rails server
-   \`\`\`
+   ```
+
 
    A aplicação estará disponível em \`http://localhost:3000\`.
 
@@ -59,15 +61,15 @@ Este projeto utiliza **RSpec** para testes automatizados.
 
 1. Certifique-se de que as dependências de teste estão instaladas:
 
-   \`\`\`bash
+   ```bash
    bundle install
-   \`\`\`
+   ```
 
 2. Rode os testes:
 
-   \`\`\`bash
+   ```bash
    bundle exec rspec
-   \`\`\`
+   ```
 
 ### O que foi testado
 
