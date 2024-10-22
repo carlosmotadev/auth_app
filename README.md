@@ -36,3 +36,4 @@ Clone o projeto para a sua máquina local.
 ```bash
 git clone https://github.com/carlosmotadev/auth_app.git
 cd auth_app
+bin/dev
