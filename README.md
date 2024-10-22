@@ -1,39 +1,85 @@
-# AuthApp - Aplicação de Autenticação com Rails 8
+echo "# AuthApp
 
-Este é um projeto básico de autenticação de usuários utilizando Ruby on Rails 8 com suporte para TailwindCSS, Turbo, e Stimulus. Ele permite que os usuários se cadastrem, façam login e logout. A segurança é implementada com `bcrypt` para o armazenamento seguro de senhas.
+## Descrição
+
+Este é um aplicativo de autenticação simples criado com Rails 8, Tailwind CSS, Stimulus, Turbo e BCrypt para gerenciamento de usuários. Ele permite que usuários criem contas, façam login e logout.
 
 ## Funcionalidades
 
-- Registro de usuários
-- Login de usuários
-- Logout de usuários
-- Flash messages para feedback do usuário
-- Validações de email e senha
+- Registro de novos usuários
+- Autenticação com email e senha
+- Sessões com login/logout
+- Flash messages para feedback ao usuário
+- Testes de controllers utilizando RSpec
 
-## Tecnologias
+## Configuração e Instalação
 
-- Ruby on Rails 8.0.0
-- TailwindCSS (via `tailwindcss-rails`)
-- Turbo e Stimulus para atualizações sem recarregar a página
-- BCrypt para hashing de senhas
+### Requisitos
 
-## Pré-requisitos
+- Ruby 3.x ou superior
+- Rails 8.x ou superior
+- Node.js e Yarn
+- Banco de dados SQLite3 (ou outro de sua preferência)
+- Bundler para gerenciar gems
 
-Certifique-se de que você tem as seguintes dependências instaladas:
+### Passos para rodar o projeto localmente
 
-- Ruby (>= 3.2.0)
-- Rails (>= 8.0.0)
-- Node.js (para JavaScript)
-- Yarn (gerenciador de pacotes)
-- PostgreSQL, SQLite ou outro banco de dados configurado
+1. Clone o repositório:
 
-## Instruções para Rodar o Projeto
+   \`\`\`bash
+   git clone https://github.com/seuusuario/auth_app.git
+   cd auth_app
+   \`\`\`
 
-### 1. Clonar o Repositório
+2. Instale as dependências:
 
-Clone o projeto para a sua máquina local.
+   \`\`\`bash
+   bundle install
+   \`\`\`
 
-```bash
-git clone https://github.com/carlosmotadev/auth_app.git
-cd auth_app
-bin/dev
+3. Configure o banco de dados:
+
+   \`\`\`bash
+   bin/rails db:create db:migrate
+   \`\`\`
+
+4. Inicie o servidor:
+
+   \`\`\`bash
+   bin/rails server
+   \`\`\`
+
+   A aplicação estará disponível em \`http://localhost:3000\`.
+
+## Rodando os Testes
+
+Este projeto utiliza **RSpec** para testes automatizados.
+
+### Como rodar os testes
+
+1. Certifique-se de que as dependências de teste estão instaladas:
+
+   \`\`\`bash
+   bundle install
+   \`\`\`
+
+2. Rode os testes:
+
+   \`\`\`bash
+   bundle exec rspec
+   \`\`\`
+
+### O que foi testado
+
+Os seguintes casos de uso foram cobertos pelos testes:
+
+1. **RegistrationsController**:
+   - Criação de um novo usuário com dados válidos.
+   - Falha ao tentar criar um usuário com dados inválidos, renderizando a página de cadastro.
+
+2. **SessionsController**:
+   - Login com credenciais válidas, redirecionando para a página inicial.
+   - Falha no login com credenciais inválidas, renderizando a página de login.
+
+Os testes de controller verificam se as ações estão funcionando conforme o esperado, como criar usuários e gerenciar sessões, garantindo que o comportamento do sistema esteja correto." > README.md
+
