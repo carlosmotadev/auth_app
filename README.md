@@ -81,5 +81,5 @@ Os seguintes casos de uso foram cobertos pelos testes:
    - Login com credenciais válidas, redirecionando para a página inicial.
    - Falha no login com credenciais inválidas, renderizando a página de login.
 
-Os testes de controller verificam se as ações estão funcionando conforme o esperado, como criar usuários e gerenciar sessões, garantindo que o comportamento do sistema esteja correto." > README.md
+Os testes de controller verificam se as ações estão funcionando conforme o esperado, como criar usuários e gerenciar sessões, garantindo que o comportamento do sistema esteja correto."
 
